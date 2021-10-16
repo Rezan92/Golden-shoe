@@ -1,11 +1,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import allProduct from './products/router.js';
 dotenv.config();
 
 const app = express();
 
+app.use('/api/', allProduct);
+
 app.get('/', (req, res) => {
-  res.send('Hello from the other side :)');
+  res.send("Hello I'm the server :)");
 });
 
 const PORT = process.env.PORT || 5000;
