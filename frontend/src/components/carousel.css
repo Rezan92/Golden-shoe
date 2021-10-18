@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: left;
+}
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00000054;
+  width: 100%;
+  height: 100%;
+}
+
+.slide_title-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.slide_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+
+.slide_btn {
+  width: 11rem;
+  height: 3rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s ease-out;
+}
+
+.slide_btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid #414141;
+}
+
+.img1 {
+  background-image: url('../utils/images/carousel-Images/footwear.jpg');
+}
+.img2 {
+  background-image: url('../utils/images/carousel-Images/football.jpg');
+}
+.img3 {
+  background-image: url('../utils/images/carousel-Images/feet.jpg');
+}
+.img4 {
+  background-image: url('../utils/images/carousel-Images/boots.jpg');
+}
+.img5 {
+  background-image: url('../utils/images/carousel-Images/footwear.jpg');
+}
+.img6 {
+  background-image: url('../utils/images/carousel-Images/football.jpg');
+}
+.images {
+  width: 100%;
+}
+
+.carousel__button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  height: 100%;
+  width: 30%;
+  opacity: 0.25;
+  position: absolute;
+  transition: opacity 0.25s;
+  z-index: 1;
+}
+
+.previous {
+  background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.349));
+  left: 0;
+  text-align: left;
+}
+
+.next {
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.349));
+  right: 0;
+  text-align: right;
+}
+
+.carousel__button:hover {
+  opacity: 1;
+}
+
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #36363665;
+  margin: 5px;
+  flex-shrink: 0;
+  cursor: pointer;
+}

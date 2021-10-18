@@ -11,13 +11,7 @@ import {
 const Header = () => {
   return (
     <>
-      <Navbar
-        bg='primary'
-        expand='md'
-        variant='dark'
-        className='p-4'
-        style={{ maxWidth: '1500px', margin: 'auto' }}
-      >
+      <Navbar bg='primary' expand='md' variant='dark' className='p-4'>
         <Navbar.Brand href='#' style={{ color: '#f0ad4e' }}>
           GOLDEN shoe
         </Navbar.Brand>
