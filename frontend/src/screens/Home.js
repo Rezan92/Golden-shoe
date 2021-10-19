@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
 import MainCarousel from '../components/MainCarousel';
-import Women from '../components/Women';
+import Carousel from '../components/Carousel';
+import Separator from '../components/Separator';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -23,13 +24,16 @@ const Home = () => {
   return (
     <>
       <MainCarousel />
-      <div className='belt'></div>
+      <Separator rotate={true} />
       {loading ? (
         <h1>Loading...</h1>
       ) : error ? (
         <h2>error</h2>
       ) : (
-        <Women products={getProductsByType(products, 'w')} />
+        <Carousel
+          products={getProductsByType(products, 'w')}
+          title={'Women Shoes'}
+        />
       )}
     </>
   );
