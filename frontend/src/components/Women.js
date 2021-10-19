@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Women = () => {
+const Women = ({ products }) => {
   return (
     <>
       <h2 className='section-header'>Women Shoes</h2>

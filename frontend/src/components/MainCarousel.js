@@ -1,7 +1,7 @@
-import './carousel.css';
+import './mainCarousel.css';
 import { useState, useRef, useEffect } from 'react';
 
-const Carousel = () => {
+const MainCarousel = () => {
   const [counter, setCounter] = useState(1);
   const [size] = useState(100);
   const [transition, setTransition] = useState('all 0.5s ease-out');
@@ -120,4 +120,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default MainCarousel;
