@@ -6,6 +6,8 @@ import Carousel from '../components/Carousel';
 import Separator from '../components/Separator';
 import HeroCardContainer from '../components/HeroCardContainer';
 import Newsletter from '../components/Newsletter';
+import Banner from '../components/Banner';
+
 const Home = () => {
   const dispatch = useDispatch();
   const store = useSelector((state) => state);
@@ -35,6 +37,7 @@ const Home = () => {
           <Carousel products={getProductsByType(products, 'w')} title={'Women'} />
           <HeroCardContainer />
           <Newsletter />
+          <Banner />
           <Carousel products={getProductsByType(products, 'm')} title={'Men'} />
         </>
       )}

@@ -134,6 +134,66 @@
   color: white;
 }
 
+.banner {
+  text-align: center;
+  margin-top: 5rem;
+  height: 400px;
+  background-image: url('./utils/images/main/Sneaker.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #02020242;
+}
+
+.banner-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.banner-title {
+  color: white;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+.banner-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner-btn {
+  min-width: 10rem;
+  width: 20%;
+  padding: 0.6rem;
+  margin: 0.3rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: 500;
+  transition: all 0.2s ease-out;
+}
+
+.banner-btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
 @media (max-width: 1000px) {
   .heroCard3 {
     display: none;
