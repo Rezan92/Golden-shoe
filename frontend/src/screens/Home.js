@@ -4,7 +4,7 @@ import { listProducts } from '../actions/productActions';
 import MainCarousel from '../components/MainCarousel';
 import Carousel from '../components/Carousel';
 import Separator from '../components/Separator';
-
+import HeroCardContainer from '../components/HeroCardContainer';
 const Home = () => {
   const dispatch = useDispatch();
   const store = useSelector((state) => state);
@@ -32,6 +32,7 @@ const Home = () => {
       ) : (
         <>
           <Carousel products={getProductsByType(products, 'w')} title={'Women'} />
+          <HeroCardContainer />
           <Carousel products={getProductsByType(products, 'm')} title={'Men'} />
         </>
       )}
