@@ -53,6 +53,10 @@ const MainCarousel = () => {
         }
       }
     });
+    const interval = setInterval(() => {
+      next();
+    }, 5000);
+    return () => clearInterval(interval);
   });
 
   return (
@@ -74,13 +78,13 @@ const MainCarousel = () => {
         >
           <div className='slide img1'>
             <div className='slide_title-container'>
-              <h2 className='slide_title'>Men</h2>
+              <h2 className='slide_title'>Sport</h2>
               <button className='slide_btn'>Shope now</button>
             </div>
           </div>
           <div className='slide img2'>
             <div className='slide_title-container'>
-              <h2 className='slide_title'>Sport</h2>
+              <h2 className='slide_title'>Men</h2>
               <button className='slide_btn'>Shope now</button>
             </div>
           </div>
@@ -98,13 +102,13 @@ const MainCarousel = () => {
           </div>
           <div className='slide img5'>
             <div className='slide_title-container'>
-              <h2 className='slide_title'>Men</h2>
+              <h2 className='slide_title'>Sport</h2>
               <button className='slide_btn'>Shope now</button>
             </div>
           </div>
           <div className='slide img6'>
             <div className='slide_title-container'>
-              <h2 className='slide_title'>Sport</h2>
+              <h2 className='slide_title'>Men</h2>
               <button className='slide_btn'>Shope now</button>
             </div>
           </div>
