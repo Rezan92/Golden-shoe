@@ -59,6 +59,16 @@ const Footer = () => {
           ]}
         />
       </div>
+      <hr />
+      <div className='copy-right'>
+        <span className='copy-right_text'>
+          © 2021 GOLDENshoe.com. All Rights Reserved.
+        </span>
+        <ul className='footer-service'>
+          <li className='footer-service_item'>Privacy Policy</li>
+          <li className='footer-service_item footer-service_item2'>Warranty</li>
+        </ul>
+      </div>
     </div>
   );
 };

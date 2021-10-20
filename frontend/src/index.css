@@ -269,6 +269,42 @@
   border-bottom: 1px solid white;
 }
 
+.copy-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #bebebe;
+}
+
+.copy-right_text {
+  margin: 1rem;
+}
+
+.footer-service {
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+}
+
+.footer-service_item {
+  margin: 0 0.2rem;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-service_item2 {
+  border-left: 2px solid white;
+  padding-left: 0.3rem;
+}
+
+.footer-service_item:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
 @media (max-width: 1000px) {
   .heroCard3 {
     display: none;
