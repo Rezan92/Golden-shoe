@@ -30,10 +30,10 @@ const Home = () => {
       ) : error ? (
         <h2>error</h2>
       ) : (
-        <Carousel
-          products={getProductsByType(products, 'w')}
-          title={'Women Shoes'}
-        />
+        <>
+          <Carousel products={getProductsByType(products, 'w')} title={'Women'} />
+          <Carousel products={getProductsByType(products, 'm')} title={'Men'} />
+        </>
       )}
     </>
   );

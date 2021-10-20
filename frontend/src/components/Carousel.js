@@ -93,16 +93,17 @@ const Carousel = ({ products, title }) => {
       <button
         onClick={prev}
         className='section-carousel_button section-carousel_previous'
+        style={{ display: counter === 0 ? 'none' : 'block' }}
       >
         {'<'}
       </button>
       <button
         onClick={next}
         className='section-carousel_button section-carousel_next'
+        style={{ display: counter + currentSlide === 20 ? 'none' : 'block' }}
       >
         {'>'}
       </button>
-      <div style={{ height: '8rem' }}></div>
     </div>
   );
 };

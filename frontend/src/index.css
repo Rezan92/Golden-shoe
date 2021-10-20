@@ -16,7 +16,7 @@ code {
 
 .separator-svg {
   position: absolute;
-  bottom: -1rem;
+  bottom: -0.3rem;
 }
 
 .belt {
@@ -30,6 +30,7 @@ code {
 
 .section-header {
   margin: 4rem;
+  margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: 200;
   text-transform: capitalize;

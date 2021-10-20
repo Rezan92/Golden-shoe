@@ -60,9 +60,9 @@
   cursor: pointer;
   font-size: 6rem;
   font-weight: 100;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
-  opacity: 1;
+  opacity: 0.25;
   position: absolute;
   transition: opacity 0.25s;
   z-index: 2;
@@ -89,13 +89,27 @@
 }
 
 @media (max-width: 810px) {
+  .section-carousel_container {
+    width: 90%;
+  }
   .section-carousel_slide {
     width: 33.33%;
+  }
+  .section-carousel_previous {
+    left: 0;
+  }
+
+  .section-carousel_next {
+    right: 0;
   }
 }
 
 @media (max-width: 600px) {
   .section-carousel_slide {
     width: 100%;
+    box-shadow: 0px 0px 5px #b3b3b3;
+  }
+  .section-carousel_button {
+    top: 55%;
   }
 }
