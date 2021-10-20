@@ -80,6 +80,60 @@
   color: white;
 }
 
+.divider {
+  background: #1a1a1a;
+  height: 1.5rem;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.newsletter-form_container {
+  background: #eee;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.newsletter-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.newsletter-form_input {
+  border: 1px solid #929292;
+  width: 30rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.newsletter-form_input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.newsletter-form_button {
+  padding: 1rem;
+  width: 15rem;
+  margin: 0.5rem;
+  background: transparent;
+  border: 1px solid black;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.newsletter-form_button:hover {
+  background: #1a1a1a;
+  color: white;
+}
+
 @media (max-width: 1000px) {
   .heroCard3 {
     display: none;
