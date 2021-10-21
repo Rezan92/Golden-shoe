@@ -10,6 +10,6 @@ export const getOneProduct = (req, res) => {
   if (product.length) {
     res.send(product[0]);
   } else {
-    res.status(404).send('This product is not exist');
+    res.sendStatus(404);
   }
 };
