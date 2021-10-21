@@ -1,5 +1,6 @@
 import './carousel.css';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const Carousel = ({ products, title }) => {
@@ -68,23 +69,25 @@ const Carousel = ({ products, title }) => {
           >
             {products.map((p) => (
               <div key={p.id} className='section-carousel_slide'>
-                <Card className=' section-carousel_card'>
-                  <div className='section-carousel_img-container'>
-                    <Card.Img
-                      variant='top'
-                      src={p.img}
-                      className='section-carousel_img'
-                    />
-                  </div>
-                  <Card.Body>
-                    <Card.Text className='section-carousel_text'>
-                      {p.name}
-                    </Card.Text>
-                    <Card.Text className='section-carousel_text'>
-                      €{p.price}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                <Link to={`/product/${p.id}`}>
+                  <Card className=' section-carousel_card'>
+                    <div className='section-carousel_img-container'>
+                      <Card.Img
+                        variant='top'
+                        src={p.img}
+                        className='section-carousel_img'
+                      />
+                    </div>
+                    <Card.Body>
+                      <Card.Text className='section-carousel_text'>
+                        {p.name}
+                      </Card.Text>
+                      <Card.Text className='section-carousel_text'>
+                        €{p.price}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
               </div>
             ))}
           </div>
