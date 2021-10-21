@@ -207,6 +207,7 @@
 
 .footer-logo {
   color: #f0ad4e;
+  cursor: pointer;
 }
 
 .footer-social_media-container {
@@ -219,6 +220,20 @@
 
 .footer-social_media {
   margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.facebook:hover {
+  background: #0073ff;
+}
+
+.instagram:hover {
+  background: #ff8a1d;
+}
+
+.youtube:hover {
+  background: red;
 }
 
 .catagory-container {
