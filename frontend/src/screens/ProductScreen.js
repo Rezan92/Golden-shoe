@@ -1,7 +1,9 @@
-import React from 'react';
+// import { Link } from "react-router-dom";
+// import { Row, Col, Image, ListGroup, Card, Button, Form } from "react-bootstrap";
+// import { useDispatch, useSelector } from "react-redux";
 
-const ProductScreen = () => {
-  return <div>Here is the product screen</div>;
+const ProductScreen = ({ match }) => {
+  return <></>;
 };
 
 export default ProductScreen;
