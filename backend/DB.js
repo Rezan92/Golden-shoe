@@ -4,6 +4,7 @@ export default [
     img: '/images/mCIVITA-Low-Shoes-Black.jpg',
     name: 'CIVITA Low Shoes Black',
     price: 229.9,
+    inStock: 0,
     type: 'm',
   },
   {
@@ -11,6 +12,7 @@ export default [
     img: '/images/mCIVITA-Low-Shoes-Mocca.jpg',
     name: 'CIVITA Low Shoes Mocca',
     price: 133.49,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -18,6 +20,7 @@ export default [
     img: '/images/mGURU-Low-Shoes-Black.jpg',
     name: 'GURU Low Shoes Black',
     price: 167.99,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -25,6 +28,7 @@ export default [
     img: '/images/mGURU-Low-Shoes-Black1.jpg',
     name: 'GURU Low Shoes Black',
     price: 245.59,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -32,6 +36,7 @@ export default [
     img: '/images/mJOEKING-Low-Shoes-Bianco_combi.jpg',
     name: 'JOEKING Low Shoes Bianco/combi',
     price: 156.23,
+    inStock: 0,
     type: 'm',
   },
   {
@@ -39,6 +44,7 @@ export default [
     img: '/images/mJOEKING-Low-Shoes-Bottle_combi.jpg',
     name: 'JOEKING Low Shoes Bottle/combi',
     price: 159.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -46,6 +52,7 @@ export default [
     img: '/images/mJOEKING-Low-Shoes-Chocolate_combi.jpg',
     name: 'JOEKING Low Shoes Chocolate/combi',
     price: 129.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -53,6 +60,7 @@ export default [
     img: '/images/mJOEKING-Low-Shoes-Wolf_combi.jpg',
     name: 'JOEKING Low Shoes Wolf/combi',
     price: 189.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -60,6 +68,7 @@ export default [
     img: '/images/mJOEKINGLow-Shoes-Black_combi.jpg',
     name: 'JOEKINGLow Shoes Black/combi',
     price: 179.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -67,6 +76,7 @@ export default [
     img: '/images/mKONG-Low-Shoes-Black.jpg',
     name: 'KONG Low Shoes Black',
     price: 136.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -74,6 +84,7 @@ export default [
     img: '/images/mKONG-Low-Shoes-Black1.jpg',
     name: 'KONG Low Shoes Black',
     price: 199.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -81,6 +92,7 @@ export default [
     img: '/images/mKONG-Low-Shoes-Black2.jpg',
     name: 'KONG Low Shoes Black',
     price: 179.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -88,6 +100,7 @@ export default [
     img: '/images/mKONG-Low-Shoes-Cognac_combi.jpg',
     name: 'KONG Low Shoes Cognac/combi',
     price: 159.9,
+    inStock: 0,
     type: 'm',
   },
   {
@@ -95,6 +108,7 @@ export default [
     img: '/images/mKONG-Low-Shoes-Olive_combi.jpg',
     name: 'KONG Low Shoes Olive/combi',
     price: 139.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -102,6 +116,7 @@ export default [
     img: '/images/mKONG-Low-Shoes-Wolf_combi.jpg',
     name: 'KONG Low Shoes Wolf/combi',
     price: 129.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -109,6 +124,7 @@ export default [
     img: '/images/mPENSA-Low-Shoes-Black.jpg',
     name: 'PENSA Low Shoes Black',
     price: 189.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -116,6 +132,7 @@ export default [
     img: '/images/mPENSA-Low-Shoes-Black1.jpg',
     name: 'PENSA Low Shoes Black',
     price: 149.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -123,6 +140,7 @@ export default [
     img: '/images/mSTONE-Low-Shoes-Black.jpg',
     name: 'STONE Low Shoes Black',
     price: 119.9,
+    inStock: 6,
     type: 'm',
   },
   {
@@ -130,6 +148,7 @@ export default [
     img: '/images/mSTONE-Low-Shoes-Black_combi.jpg',
     name: 'STONE Low Shoes Black/combi',
     price: 239.9,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -137,6 +156,7 @@ export default [
     img: '/images/mSTONE-Low-Shoes-Wolf_combi.jpg',
     name: 'STONE Low Shoes Wolf/combi',
     price: 119.0,
+    inStock: 5,
     type: 'm',
   },
   {
@@ -144,6 +164,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Barolo.jpg',
     name: 'AGRAT Ankle Boot Barolo',
     price: 169.9,
+    inStock: 4,
     type: 'w',
   },
   {
@@ -151,6 +172,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Black.jpg',
     name: 'AGRAT Ankle Boot Black',
     price: 179.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -158,6 +180,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Black2.jpg',
     name: 'AGRAT Ankle Boot Black',
     price: 129.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -165,6 +188,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Black3.jpg',
     name: 'AGRAT Ankle Boot Black',
     price: 149.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -172,6 +196,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Fango.jpg',
     name: 'AGRAT Ankle Boot Fango',
     price: 219.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -179,6 +204,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Mud.jpg',
     name: 'AGRAT Ankle Boot Mud',
     price: 139.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -186,6 +212,7 @@ export default [
     img: '/images/wAGRAT-Ankle-Boot-Wolf.jpg',
     name: 'AGRAT Ankle Boot Wolf',
     price: 179.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -193,6 +220,7 @@ export default [
     img: '/images/wAGRAT-Chelsea-Boot-Black.jpg',
     name: 'AGRAT Chelsea Boot Black',
     price: 189.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -200,6 +228,7 @@ export default [
     img: '/images/wAGRAT-Chelsea-Boot-Rust.jpg',
     name: 'AGRAT Chelsea Boot Rust',
     price: 149.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -207,6 +236,7 @@ export default [
     img: '/images/wAGRAT-Chelsea-Boot-Rust2.jpg',
     name: 'AGRAT Chelsea Boot Rust',
     price: 169.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -214,6 +244,7 @@ export default [
     img: '/images/wAGRAT-Chelsea-Boot-Wolf.jpg',
     name: 'AGRAT Chelsea Boot Wolf',
     price: 189.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -221,6 +252,7 @@ export default [
     img: '/images/wCOGITA-Ankle-Boot-Bottle.jpg',
     name: 'COGITA Ankle Boot Bottle',
     price: 149.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -228,6 +260,7 @@ export default [
     img: '/images/wCOGITA-Ankle-Boot-Wolf.jpg',
     name: 'COGITA Ankle Boot Wolf',
     price: 169.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -235,6 +268,7 @@ export default [
     img: '/images/wCOMODA-Ankle-Boot-Grunge.jpg',
     name: 'COMODA Ankle Boot Grunge',
     price: 179.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -242,6 +276,7 @@ export default [
     img: '/images/wCOMODA-Ankle-Boot-Taiga_combi.jpg',
     name: 'COMODA Ankle Boot Taiga/combi',
     price: 149.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -249,6 +284,7 @@ export default [
     img: '/images/wDELICIA-Ankle-Boot-Espresso_combi.jpg',
     name: 'DELICIA Ankle Boot Espresso/combi',
     price: 179.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -256,6 +292,7 @@ export default [
     img: '/images/wGUAD2-Ankle-Boot-Vino.jpg',
     name: 'GUAD2 Ankle Boot Vino',
     price: 139.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -263,6 +300,7 @@ export default [
     img: '/images/wGUAD2-Chelsea-Boot-Mocca_combi.jpg',
     name: 'GUAD2 Chelsea Boot Mocca/combi',
     price: 119.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -270,6 +308,7 @@ export default [
     img: '/images/wSPUATChelsea-Boot-Black_combi.jpg',
     name: 'SPUATChelsea Boot Black combi',
     price: 179.9,
+    inStock: 5,
     type: 'w',
   },
   {
@@ -277,6 +316,7 @@ export default [
     img: '/images/wTJUB-Ankle-Boot-Chestnut_combi.jpg',
     name: 'TJUB Ankle Boot Chestnut/combi',
     price: 249.9,
+    inStock: 5,
     type: 'w',
   },
 ];

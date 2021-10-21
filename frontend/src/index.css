@@ -320,6 +320,29 @@
   border-bottom: 1px solid white;
 }
 
+.product-container {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+.product_img-container {
+  background: #eeeeee;
+}
+
+.product_img {
+  mix-blend-mode: multiply;
+  width: 80%;
+  max-width: 310px;
+  transition: all 0.3s ease-out;
+}
+
+.product_img:hover {
+  transform: scale(1.5) translateY(-20%);
+}
+
+.product-btn {
+  color: black;
+}
+
 @media (max-width: 1000px) {
   .heroCard3 {
     display: none;
