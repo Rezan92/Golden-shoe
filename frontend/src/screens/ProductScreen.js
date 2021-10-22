@@ -5,19 +5,19 @@ import {
   Col,
   Image,
   ListGroup,
-  Card,
   Button,
   Form,
 } from 'react-bootstrap';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getOneProduct } from '../actions/productActions';
 
-const ProductScreen = ({ history, match }) => {
-  const id = match.params.id;
+const ProductScreen = ({ match }) => {
+  const [qty, setQty] = useState(0);
   const dispatch = useDispatch();
   const state = useSelector((state) => state.product);
   const { loading, error, product } = state;
+  const id = match.params.id;
 
   useEffect(() => {
     dispatch(getOneProduct(id));
@@ -41,27 +41,52 @@ const ProductScreen = ({ history, match }) => {
 
             <ListGroup.Item>
               <Row>
-                <Col>
-                  <h5>Price:</h5>
+                <Col className='d-flex align-items-center'>
+                  <h5 className='m-0'>Price:</h5>
                 </Col>
                 <Col>
-                  <h5>${product.price}</h5>
+                  <h5 className='m-0'>${product.price}</h5>
                 </Col>
               </Row>
             </ListGroup.Item>
 
             <ListGroup.Item>
               <Row>
-                <Col>
-                  <h5>Status:</h5>
+                <Col className='d-flex align-items-center'>
+                  <h5 className='m-0'>Status:</h5>
                 </Col>
                 <Col>
-                  <h5>
+                  <h5 className='m-0'>
                     {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
                   </h5>
                 </Col>
               </Row>
             </ListGroup.Item>
+
+            {product.inStock > 0 && (
+              <ListGroup.Item>
+                <Row>
+                  <Col className='d-flex align-items-center'>
+                    <h5 className='m-0'>Qty:</h5>
+                  </Col>
+                  <Col>
+                    <Form.Control
+                      className='py-1 mx-auto text-center w-75'
+                      role='button'
+                      as='select'
+                      value={qty}
+                      onChange={(e) => setQty(e.target.value)}
+                    >
+                      {[...Array(product.inStock).keys()].map((x) => (
+                        <option value={x + 1} key={x + 1}>
+                          {x + 1}
+                        </option>
+                      ))}
+                    </Form.Control>
+                  </Col>
+                </Row>
+              </ListGroup.Item>
+            )}
 
             <ListGroup.Item>
               <Button disabled={product.inStock === 0}>Add To Cart</Button>
