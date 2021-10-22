@@ -1,11 +1,38 @@
-export const cartReducer = (state = { cart: [] }, action) => {
+import {
+  CART_ADD_ITEM,
+  CART_REMOVE_ITEM,
+  CART_SHOW,
+  CART_HIDE,
+} from '../constants/cartConstents.js';
+export const cartReducer = (state = { cartItems: [] }, action) => {
   switch (action.type) {
-    case CART_LIST_REQUEST:
-      return { loading: true, cart: [] };
-    case CART_LIST_SUCCESS:
-      return { loading: false, cart: action.payload };
-    case CART_LIST_FAIL:
-      return { loading: false, error: action.payload };
+    case CART_ADD_ITEM:
+      const item = action.payload;
+      const existItem = state.cartItems.find((x) => x.id === item.id);
+      if (existItem) {
+        return {
+          ...state,
+          cartItems: state.cartItems.map((x) =>
+            x.id === existItem.id ? item : x
+          ),
+        };
+      } else {
+        return {
+          ...state,
+          cartItems: [...state.cartItems, item],
+        };
+      }
+    default:
+      return state;
+  }
+};
+
+export const cartToggleReducer = (state = { cartToggle: false }, action) => {
+  switch (action.type) {
+    case CART_SHOW:
+      return { ...state, cartToggle: action.payload };
+    case CART_HIDE:
+      return { ...state, cartToggle: action.payload };
     default:
       return state;
   }

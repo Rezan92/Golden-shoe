@@ -7,8 +7,11 @@ import {
   Form,
   Button,
 } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { toggleCart } from '../actions/cartAction';
 
 const Header = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <Navbar bg='primary' expand='md' variant='dark' className='p-4'>
@@ -20,7 +23,6 @@ const Header = () => {
           <Nav>
             <Nav.Link href='#action1'>Women</Nav.Link>
             <Nav.Link href='#action2'>Men</Nav.Link>
-            <Nav.Link href='#action3'>Explore</Nav.Link>
             <NavDropdown title='Stores' id='navbarScrollingDropdown'>
               <NavDropdown.Item href='#action4'>London</NavDropdown.Item>
               <NavDropdown.Item href='#action5'>Amsterdam</NavDropdown.Item>
@@ -45,7 +47,11 @@ const Header = () => {
               <FaHeart size='30' color='white' />
             </Nav.Link>
             <Nav.Link href='#action1' className='mx-1'>
-              <FaShoppingBag size='30' color='white' />
+              <FaShoppingBag
+                size='30'
+                color='white'
+                onClick={() => dispatch(toggleCart(true))}
+              />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
