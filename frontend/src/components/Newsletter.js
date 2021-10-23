@@ -14,7 +14,7 @@ const Newsletter = () => {
             placeholder='Your email address'
           />
           <button className='newsletter-form_button'>
-            Subsecribe to the newsletter
+            Subscribe to the newsletter
           </button>
         </form>
       </div>

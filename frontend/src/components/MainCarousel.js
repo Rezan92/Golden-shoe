@@ -81,7 +81,7 @@ const MainCarousel = () => {
             <div className='slide_title-container'>
               <h2 className='slide_title'>Sport</h2>
               <Link to={'/all/product'}>
-                <button className='slide_btn'>Shope now</button>
+                <button className='slide_btn'>Shop now</button>
               </Link>
             </div>
           </div>
@@ -89,7 +89,7 @@ const MainCarousel = () => {
             <div className='slide_title-container'>
               <h2 className='slide_title'>Men</h2>
               <Link to={'/m/product'}>
-                <button className='slide_btn'>Shope now</button>
+                <button className='slide_btn'>Shop now</button>
               </Link>
             </div>
           </div>
@@ -97,7 +97,7 @@ const MainCarousel = () => {
             <div className='slide_title-container'>
               <h2 className='slide_title'>Sneakers</h2>
               <Link to={'/all/product'}>
-                <button className='slide_btn'>Shope now</button>
+                <button className='slide_btn'>Shop now</button>
               </Link>
             </div>
           </div>
@@ -105,7 +105,7 @@ const MainCarousel = () => {
             <div className='slide_title-container'>
               <h2 className='slide_title'>Women</h2>
               <Link to={'/w/product'}>
-                <button className='slide_btn'>Shope now</button>
+                <button className='slide_btn'>Shop now</button>
               </Link>
             </div>
           </div>
@@ -113,7 +113,7 @@ const MainCarousel = () => {
             <div className='slide_title-container'>
               <h2 className='slide_title'>Sport</h2>
               <Link to={'/all/product'}>
-                <button className='slide_btn'>Shope now</button>
+                <button className='slide_btn'>Shop now</button>
               </Link>
             </div>
           </div>
@@ -121,7 +121,7 @@ const MainCarousel = () => {
             <div className='slide_title-container'>
               <h2 className='slide_title'>Men</h2>
               <Link to={'/m/product'}>
-                <button className='slide_btn'>Shope now</button>
+                <button className='slide_btn'>Shop now</button>
               </Link>
             </div>
           </div>

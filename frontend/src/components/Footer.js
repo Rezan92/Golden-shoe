@@ -40,13 +40,13 @@ const Footer = () => {
         />
         <Catagories
           title={'CUSTOMER SERVICE'}
-          items={['To order', 'Shipments', 'my orders', 'See More']}
+          items={['To Order', 'Shipments', 'My Orders', 'See More']}
         />
         <Catagories
           title={'Collection'}
           items={[
-            "Women's shoes",
-            "Men's shoes",
+            "Women's Shoes",
+            "Men's Shoes",
             "Women's Sneakers",
             "Women's Boots",
           ]}
@@ -54,10 +54,10 @@ const Footer = () => {
         <Catagories
           title={'About us'}
           items={[
-            'Our stores',
-            'All stores',
+            'Our Stores',
+            'All Stores',
             'About GOLDEN SHOE',
-            'Press contact',
+            'Press Contact',
             'Careers',
           ]}
         />
