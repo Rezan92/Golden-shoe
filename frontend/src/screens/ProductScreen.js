@@ -7,6 +7,7 @@ import {
   ListGroup,
   Button,
   Form,
+  Alert,
 } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,20 +15,22 @@ import { getOneProduct } from '../actions/productActions';
 import { addToCart } from '../actions/cartAction';
 
 const ProductScreen = ({ match }) => {
+  const [toggleAlert, setToggleAlert] = useState(false);
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
   const state = useSelector((state) => state.product);
   const { loading, error, product } = state;
   const id = match.params.id;
 
+  const addToCartHandler = () => {
+    dispatch(addToCart(id, qty));
+    setToggleAlert(true);
+  };
+
   useEffect(() => {
     dispatch(getOneProduct(id));
     window.scrollTo(0, 0);
   }, [dispatch, id]);
-
-  const addToCartHandler = () => {
-    dispatch(addToCart(id, qty));
-  };
 
   return (
     <Container className='product-container'>
@@ -40,6 +43,11 @@ const ProductScreen = ({ match }) => {
         <h1>error</h1>
       ) : (
         <Row>
+          {toggleAlert && (
+            <Alert variant='success' className='cart-alert'>
+              Product added to cart
+            </Alert>
+          )}
           <Col md={6} className='p-5 text-center product_img-container'>
             <Image className='product_img' src={product.img} alt={product.name} />
             <div className='py-3'></div>

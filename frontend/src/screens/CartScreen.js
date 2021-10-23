@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
-import { addToCart, toggleCart } from '../actions/cartAction';
+import { addToCart, toggleCart, removeFromCart } from '../actions/cartAction';
 import {} from '../actions/cartAction';
 import Message from '../components/Message';
 import { FaTrashAlt } from 'react-icons/fa';
@@ -10,12 +9,14 @@ import { FaTrashAlt } from 'react-icons/fa';
 const CartScreen = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
+
   const {
     cart: { cartItems },
     cartToggle: { cartToggle },
   } = state;
+
   const removeFromCartHandler = (id) => {
-    console.log('remove');
+    dispatch(removeFromCart(id));
   };
 
   const checkoutHandler = () => {
