@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import allProduct from './products/router.js';
 import cors from 'cors';
+import path from 'path';
 
 dotenv.config();
 
@@ -12,8 +13,12 @@ app.use(express.json());
 
 app.use('/api/', allProduct);
 
-app.get('/', (req, res) => {
-  res.send("Hello I'm the server :)");
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, '/frontend/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
