@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
-import { addToCart, toggleCart, removeFromCart } from '../actions/cartAction';
+import {
+  addToCart,
+  toggleCart,
+  removeFromCart,
+  toggleLogin,
+} from '../actions/cartAction';
 import {} from '../actions/cartAction';
 import Message from '../components/Message';
 import { FaTrashAlt } from 'react-icons/fa';
@@ -19,8 +24,9 @@ const CartScreen = () => {
     dispatch(removeFromCart(id));
   };
 
-  const checkoutHandler = () => {
-    console.log('checkout');
+  const checkoutHandler = (bool) => {
+    dispatch(toggleLogin(bool));
+    dispatch(toggleCart(!bool));
   };
 
   const toggleCartHandler = (bool) => {
@@ -126,7 +132,7 @@ const CartScreen = () => {
                               type='button'
                               className='btn-block'
                               disabled={cartItems.length === 0}
-                              onClick={checkoutHandler}
+                              onClick={() => checkoutHandler(true)}
                             >
                               Proceed To Checkout
                             </Button>

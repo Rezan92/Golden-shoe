@@ -3,6 +3,8 @@ import {
   CART_REMOVE_ITEM,
   CART_SHOW,
   CART_HIDE,
+  LOGIN_SHOW,
+  LOGIN_HIDE,
 } from '../constants/cartConstents.js';
 export const cartReducer = (state = { cartItems: [] }, action) => {
   switch (action.type) {
@@ -38,6 +40,17 @@ export const cartToggleReducer = (state = { cartToggle: false }, action) => {
       return { ...state, cartToggle: action.payload };
     case CART_HIDE:
       return { ...state, cartToggle: action.payload };
+    default:
+      return state;
+  }
+};
+
+export const loginToggleReducer = (state = { loginToggle: false }, action) => {
+  switch (action.type) {
+    case LOGIN_SHOW:
+      return { ...state, loginToggle: action.payload };
+    case LOGIN_HIDE:
+      return { ...state, loginToggle: action.payload };
     default:
       return state;
   }

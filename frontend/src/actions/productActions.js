@@ -28,7 +28,6 @@ export const getOneProduct = (id) => async (dispatch) => {
 
     dispatch({ type: PRODUCT_SUCCESS, payload: data });
   } catch (error) {
-    console.log(`error`, error);
     dispatch({
       type: PRODUCT_FAIL,
       payload: error,
