@@ -7,6 +7,7 @@ import Separator from '../components/Separator';
 import HeroCardContainer from '../components/HeroCardContainer';
 import Newsletter from '../components/Newsletter';
 import Banner from '../components/Banner';
+import Loader from '../components/Loader';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const Home = () => {
       <MainCarousel />
       <Separator rotate={true} />
       {loading ? (
-        <h1>Loading...</h1>
+        <Loader />
       ) : error ? (
         <h2>error</h2>
       ) : (

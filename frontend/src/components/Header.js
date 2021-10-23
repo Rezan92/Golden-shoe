@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <>
       <Navbar bg='primary' expand='md' variant='dark' className='p-4'>
-        <Navbar.Brand href='#' style={{ color: '#f0ad4e' }}>
+        <Navbar.Brand href='/' style={{ color: '#f0ad4e' }}>
           GOLDEN shoe
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='navbarScroll' />
@@ -53,7 +53,9 @@ const Header = () => {
               className='mx-1'
               className='item-num_container'
             >
-              <div className='item-num'>{cartItems.length}</div>
+              <div className='item-num'>
+                {cartItems.reduce((acc, item) => acc + Number(item.qty), 0)}
+              </div>
               <FaShoppingBag
                 size='30'
                 color='white'

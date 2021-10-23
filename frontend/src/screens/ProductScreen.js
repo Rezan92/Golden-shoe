@@ -9,6 +9,7 @@ import {
   Form,
   Alert,
 } from 'react-bootstrap';
+import Loader from '../components/Loader';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getOneProduct } from '../actions/productActions';
@@ -38,7 +39,7 @@ const ProductScreen = ({ match }) => {
         Go back
       </Link>
       {loading ? (
-        <h1>Loading...</h1>
+        <Loader />
       ) : error ? (
         <h1>error</h1>
       ) : (
@@ -76,7 +77,7 @@ const ProductScreen = ({ match }) => {
                   </Col>
                   <Col>
                     <h5 className='m-0'>
-                      {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
+                      {product.inStock > 0 ? 'In Stock' : 'Out Of Stock'}
                     </h5>
                   </Col>
                 </Row>

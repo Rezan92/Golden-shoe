@@ -70,7 +70,10 @@ const CartScreen = () => {
                               />
                             </Col>
                             <Col xs={6} md={3} className='cart-flex'>
-                              <Link to={`/product/${item.id}`}>
+                              <Link
+                                to={`/product/${item.id}`}
+                                onClick={() => dispatch(toggleCart(false))}
+                              >
                                 <h6>{item.name}</h6>
                               </Link>
                             </Col>
