@@ -403,6 +403,23 @@
   text-align: center;
 }
 
+.item-num_container {
+  position: relative;
+}
+
+.item-num {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: red;
+  z-index: 10;
+}
+
 @media (max-width: 1000px) {
   .heroCard3 {
     display: none;
