@@ -36,7 +36,7 @@ const ProductScreen = ({ match }) => {
   return (
     <Container className='product-container'>
       <Link className='btn btn-dark my-3' to='/'>
-        Go back
+        Home page
       </Link>
       {loading ? (
         <Loader />

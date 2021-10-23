@@ -5,13 +5,16 @@ import {
   FaInstagramSquare,
   FaYoutubeSquare,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className='footer-container'>
       <Separator />
       <header className='footer-header'>
-        <h1 className='footer-logo'>GOLDEN SHOE</h1>
+        <Link to={'/'}>
+          <h1 className='footer-logo'>GOLDEN SHOE</h1>
+        </Link>
         <ul className='footer-social_media-container'>
           <li className='footer-social_media facebook'>
             <FaFacebookSquare size='30' color='white' />

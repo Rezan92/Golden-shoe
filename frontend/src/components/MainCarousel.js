@@ -1,5 +1,6 @@
 import './mainCarousel.css';
 import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const MainCarousel = () => {
   const [counter, setCounter] = useState(1);
@@ -79,37 +80,49 @@ const MainCarousel = () => {
           <div className='slide img1'>
             <div className='slide_title-container'>
               <h2 className='slide_title'>Sport</h2>
-              <button className='slide_btn'>Shope now</button>
+              <Link to={'/all/product'}>
+                <button className='slide_btn'>Shope now</button>
+              </Link>
             </div>
           </div>
           <div className='slide img2'>
             <div className='slide_title-container'>
               <h2 className='slide_title'>Men</h2>
-              <button className='slide_btn'>Shope now</button>
+              <Link to={'/m/product'}>
+                <button className='slide_btn'>Shope now</button>
+              </Link>
             </div>
           </div>
           <div className='slide img3'>
             <div className='slide_title-container'>
               <h2 className='slide_title'>Sneakers</h2>
-              <button className='slide_btn'>Shope now</button>
+              <Link to={'/all/product'}>
+                <button className='slide_btn'>Shope now</button>
+              </Link>
             </div>
           </div>
           <div className='slide img4'>
             <div className='slide_title-container'>
               <h2 className='slide_title'>Women</h2>
-              <button className='slide_btn'>Shope now</button>
+              <Link to={'/w/product'}>
+                <button className='slide_btn'>Shope now</button>
+              </Link>
             </div>
           </div>
           <div className='slide img5'>
             <div className='slide_title-container'>
               <h2 className='slide_title'>Sport</h2>
-              <button className='slide_btn'>Shope now</button>
+              <Link to={'/all/product'}>
+                <button className='slide_btn'>Shope now</button>
+              </Link>
             </div>
           </div>
           <div className='slide img6'>
             <div className='slide_title-container'>
               <h2 className='slide_title'>Men</h2>
-              <button className='slide_btn'>Shope now</button>
+              <Link to={'/m/product'}>
+                <button className='slide_btn'>Shope now</button>
+              </Link>
             </div>
           </div>
         </div>

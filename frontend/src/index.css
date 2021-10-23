@@ -352,6 +352,8 @@
 .cart-flex {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .cart-container {
@@ -418,6 +420,16 @@
   color: #fff;
   background: red;
   z-index: 10;
+}
+
+.flex-list_products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 5px #797979;
 }
 
 @media (max-width: 1000px) {
